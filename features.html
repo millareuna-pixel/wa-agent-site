@@ -1,74 +1,40 @@
-
-<!doctype html>
+<!DOCTYPE html>
 <html lang="fi">
 <head>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width,initial-scale=1">
-  <title>Ominaisuudet — WA-Agent</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>WA-Agent – Ominaisuudet</title>
   <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-  <header class="site-header">
-    <div class="container header-inner">
-      <div class="brand">
-        <svg class="logo" viewBox="0 0 24 24" aria-hidden="true"><rect width="24" height="24" rx="4" fill="#075E54"/></svg>
-        <span class="site-title">WA-Agent</span>
-      </div>
-      <button class="menu-btn" id="menuBtn2" aria-label="Valikko">☰</button>
-      <nav class="nav" id="nav2">
-        <a href="index.html">Etusivu</a>
-        <a href="features.html">Ominaisuudet</a>
-        <a href="pricing.html">Hinnoittelu</a>
-      </nav>
-    </div>
+  <header>
+    <h1>WA-Agent</h1>
+    <nav>
+      <a href="index.html">Etusivu</a>
+      <a href="features.html" class="active">Ominaisuudet</a>
+      <a href="pricing.html">Hinnoittelu</a>
+    </nav>
   </header>
 
-  <main class="container">
-    <section class="features-hero">
-      <h1>Mitä WA-Agent tekee puolestasi?</h1>
-      <p class="lead">Konkrettiset työkalut, jotka tekevät viestinnästä hallittavampaa.</p>
+  <main>
+    <h2>Mitä WA-Agent tekee puolestasi?</h2>
+    <section class="feature">
+      <h3>Kooste viesteistä</h3>
+      <p>WA-Agentti käy viestit läpi ja kertoo vain sen, mikä on sinulle olennaista.</p>
     </section>
-
-    <section class="feature-list">
-      <article class="feature-card">
-        <div class="f-icon">📄</div>
-        <div>
-          <h2>Kooste viesteistä</h2>
-          <p>WA-Agent käy viestit läpi ja kertoo vain sen, mikä on sinulle olennaista.</p>
-        </div>
-      </article>
-
-      <article class="feature-card">
-        <div class="f-icon">⏰</div>
-        <div>
-          <h2>Muistutukset</h2>
-          <p>Älä enää unohda tärkeitä tapahtumia — WA-Agent lisää ne puolestasi kalenteriin.</p>
-        </div>
-      </article>
-
-      <article class="feature-card">
-        <div class="f-icon">💬</div>
-        <div>
-          <h2>Älykkäät vastausehdotukset</h2>
-          <p>Vastaa nopeasti yhdellä napautuksella — agentti ehdottaa sopivimmat viestit tilanteeseen.</p>
-        </div>
-      </article>
+    <section class="feature">
+      <h3>Muistutukset</h3>
+      <p>Älä enää unohda tärkeitä tapahtumia – WA-Agentti lisää ne puolestasi kalenteriin.</p>
     </section>
-
-    <p class="cta-row"><a class="btn primary" href="pricing.html">Kokeile ilmaiseksi</a></p>
+    <section class="feature">
+      <h3>Älykkäät vastausehdotukset</h3>
+      <p>Vastaa nopeasti yhdellä napautuksella – agentti ehdottaa sopivimmat viestit tilanteeseen.</p>
+    </section>
+    <a class="btn primary" href="pricing.html">Tutustu Premiumiin</a>
   </main>
 
-  <footer class="site-footer">
-    <div class="container footer-inner">
-      <p>© WA-Agent — 2025. <a href="privacy.html">Tietosuoja</a></p>
-    </div>
+  <footer>
+    <p>© 2025 WA-Agent</p>
   </footer>
-
-<script>
-document.getElementById('menuBtn2').addEventListener('click', function(){ 
-  var nav = document.getElementById('nav2');
-  nav.classList.toggle('open');
-});
-</script>
 </body>
 </html>
