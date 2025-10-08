@@ -1,0 +1,81 @@
+
+/* WA-Agent simple mobile-first stylesheet */
+/* Colors */
+:root{
+  --brand-dark: #075E54;
+  --brand: #25D366;
+  --bg: #ffffff;
+  --muted: #f5f5f5;
+  --text: #212121;
+  --muted-text: #666666;
+}
+
+/* Base resets */
+*{box-sizing:border-box}
+html,body{height:100%}
+body{
+  margin:0;
+  font-family: Roboto, system-ui, -apple-system, "Segoe UI", "Helvetica Neue", Arial;
+  color:var(--text);
+  background:var(--bg);
+  -webkit-font-smoothing:antialiased;
+}
+
+/* Container */
+.container{width:92%;max-width:980px;margin:0 auto}
+
+/* Header */
+.site-header{background:var(--bg);border-bottom:1px solid #eee;position:sticky;top:0;z-index:100}
+.header-inner{display:flex;align-items:center;justify-content:space-between;padding:12px 0}
+.brand{display:flex;align-items:center;gap:10px}
+.logo{width:34px;height:34px}
+.site-title{font-weight:700}
+
+/* Navigation */
+.menu-btn{background:none;border:0;font-size:20px;padding:6px;display:block}
+.nav{display:none}
+.nav.open{display:block;position:absolute;left:12px;top:64px;right:12px;background:white;padding:12px;border:1px solid #eee;border-radius:8px;box-shadow:0 6px 20px rgba(0,0,0,0.06)}
+.nav a{display:block;padding:8px 0;color:var(--text);text-decoration:none;font-weight:500}
+
+/* Hero */
+.hero{padding:22px 0;text-align:center}
+.hero h1{font-family:Poppins, Roboto, sans-serif;font-size:26px;margin:8px 0}
+.lead{color:var(--muted-text);font-size:15px;margin:8px 0 16px}
+.btn{display:inline-block;padding:12px 18px;border-radius:8px;text-decoration:none;border:1px solid #ddd;background:white;color:var(--text)}
+.btn.primary{background:var(--brand);color:white;border-color:transparent}
+.hero-image{margin-top:18px;display:flex;justify-content:center}
+.phone-mock{width:180px;height:auto;}
+
+/* Benefits */
+.benefits{display:grid;grid-template-columns:1fr;gap:12px;padding:10px 0 40px}
+.benefit{background:var(--muted);padding:12px;border-radius:10px;text-align:center}
+.icon{font-size:24px;margin-bottom:6px}
+
+/* Features */
+.features-hero{padding:18px 0 6px;text-align:center}
+.feature-list{display:grid;grid-template-columns:1fr;gap:12px;padding-bottom:20px}
+.feature-card{background:white;padding:12px;border-radius:10px;border:1px solid #eee;display:flex;gap:12px;align-items:flex-start}
+.f-icon{font-size:24px}
+
+/* Pricing */
+.pricing-hero{padding:18px 0 6px;text-align:center}
+.pricing-list{display:grid;grid-template-columns:1fr;gap:12px;padding-bottom:20px}
+.price-card{background:white;padding:14px;border-radius:10px;border:1px solid #eee;text-align:center}
+.price{font-weight:700;font-size:18px;margin:8px 0}
+.price-card.premium{background:linear-gradient(180deg, rgba(37,211,102,0.08), #ffffff);border:2px solid rgba(37,211,102,0.18)}
+
+/* Footer */
+.site-footer{border-top:1px solid #eee;padding:18px 0;margin-top:40px;text-align:center;color:var(--muted-text)}
+
+/* Responsive: tablet and up */
+@media(min-width:720px){
+  .menu-btn{display:none}
+  .nav{display:flex;gap:14px;position:static}
+  .nav a{display:inline-block;padding:8px 10px}
+  .hero{display:flex;gap:20px;align-items:center;text-align:left;padding:30px 0}
+  .hero h1{font-size:34px}
+  .hero-image{flex:0 0 360px;display:block}
+  .benefits{grid-template-columns:repeat(3,1fr);}
+  .feature-list{grid-template-columns:repeat(3,1fr)}
+  .pricing-list{grid-template-columns:1fr 1fr}
+}
