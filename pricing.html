@@ -1,72 +1,49 @@
-
-<!doctype html>
+<!DOCTYPE html>
 <html lang="fi">
 <head>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width,initial-scale=1">
-  <title>Hinnoittelu — WA-Agent</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>WA-Agent – Hinnoittelu</title>
   <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-  <header class="site-header">
-    <div class="container header-inner">
-      <div class="brand">
-        <svg class="logo" viewBox="0 0 24 24" aria-hidden="true"><rect width="24" height="24" rx="4" fill="#075E54"/></svg>
-        <span class="site-title">WA-Agent</span>
-      </div>
-      <button class="menu-btn" id="menuBtn3" aria-label="Valikko">☰</button>
-      <nav class="nav" id="nav3">
-        <a href="index.html">Etusivu</a>
-        <a href="features.html">Ominaisuudet</a>
-        <a href="pricing.html">Hinnoittelu</a>
-      </nav>
-    </div>
+  <header>
+    <h1>WA-Agent</h1>
+    <nav>
+      <a href="index.html">Etusivu</a>
+      <a href="features.html">Ominaisuudet</a>
+      <a href="pricing.html" class="active">Hinnoittelu</a>
+    </nav>
   </header>
 
-  <main class="container">
-    <section class="pricing-hero">
-      <h1>Valitse sinulle sopiva jäsenyys</h1>
-      <p class="lead">Kokeile ilmaiseksi — päivitä, kun tarvitset enemmän.</p>
-    </section>
-
-    <section class="pricing-list">
-      <div class="price-card">
-        <h2>Free</h2>
-        <p class="price">0 € / kk</p>
+  <main>
+    <h2>Valitse sinulle sopiva jäsenyys</h2>
+    <section class="pricing">
+      <div class="plan">
+        <h3>Free</h3>
         <ul>
           <li>Kooste yhdestä ryhmästä</li>
           <li>Viikkoyhteenveto</li>
           <li>Perustason muistutukset</li>
         </ul>
-        <p><a class="btn" href="#">Aloita ilmaiseksi</a></p>
+        <a class="btn primary" href="#aloita">Aloita ilmaiseksi</a>
       </div>
-
-      <div class="price-card premium">
-        <h2>Premium</h2>
-        <p class="price">4,99 € / kk</p>
+      <div class="plan premium">
+        <h3>Premium</h3>
         <ul>
           <li>Rajattomasti ryhmiä</li>
           <li>Reaaliaikaiset muistutukset</li>
-          <li>Kalenteri-integraatio & automaattivastaukset</li>
+          <li>Kalenteri-integraatio</li>
+          <li>Automaattivastaukset</li>
         </ul>
-        <p><a class="btn primary" href="#">Aloita ilmaiseksi</a></p>
+        <a class="btn primary" href="#aloita">Aloita ilmaiseksi</a>
       </div>
     </section>
-
-    <p class="small-note">Ei sitoutumista. Voit päivittää milloin tahansa.</p>
+    <p class="note">Ei sitoutumista. Voit päivittää milloin tahansa.</p>
   </main>
 
-  <footer class="site-footer">
-    <div class="container footer-inner">
-      <p>© WA-Agent — 2025. <a href="privacy.html">Tietosuoja</a></p>
-    </div>
+  <footer>
+    <p>© 2025 WA-Agent</p>
   </footer>
-
-<script>
-document.getElementById('menuBtn3').addEventListener('click', function(){ 
-  var nav = document.getElementById('nav3');
-  nav.classList.toggle('open');
-});
-</script>
 </body>
 </html>
